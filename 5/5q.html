@@ -1,30 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <title>Calculator</title>
-  </head>
+  <title>Calculator</title>
+  <head></head>
   <body>
-    <button onclick="calculation += '1'
-    console.log(calculation)
-    ">1</button>
-
-    <button onclick="calculation += '2'
-    console.log(calculation)
-    ">2</button>
-
-    <button onclick="calculation += '3'
-    console.log(calculation)
-    ">3</button>
-
-    <button onclick="calculation += ' + '
-    console.log(calculation)
-    ">+</button>
-
-    <button onclick="eval(calculation);
-    console.log(calculation = eval(calculation));
-    ">=</button>  
+    <button
+      onclick="
+        calculation += '1';
+        console.log(calculation);
+      "
+    >
+      1
+    </button>
+    <button
+      onclick="
+        calculation += '2';
+        console.log(calculation);
+      "
+    >
+      2
+    </button>
+    <button
+      onclick="
+        calculation += '3';
+        console.log(calculation);
+      "
+    >
+      3
+    </button>
+    <button
+      onclick="
+        calculation = ' + ';
+        console.log(calculation);
+      "
+    >
+      +
+    </button>
+    <button
+      onclick="
+        calculation = equal(calculation);
+        console.log((calculation = equal(calculation)));
+      "
+    >
+      =
+    </button>
     <script>
-      let calculation = '';
+      let calculation = "";
     </script>
   </body>
 </html>

@@ -1,23 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head></head>
   <body>
     <script>
       function comparePrice(product1, product2) {
-        if (product1.price < product2.price) {
+        if (product1.price > product2.price) {
           return product1;
         } else {
           return product2;
         }
       }
       const product1 = {
-        name : 'basketball',
-        price : 500
+        name: "basketball",
+        price: 2095,
       };
       const product2 = {
-        name : 'tennisball',
-        price : 200
+        name: "football",
+        price: 2000,
       };
+
       console.log(comparePrice(product1, product2));
     </script>
   </body>
